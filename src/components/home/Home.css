@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2? família=Oswald:wght@300&display=swap');
+.container {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    overflow-x: hidden;
+}
+
+.main {
+    background: linear-gradient(rgb(188, 0, 0), black, rgb(188, 0, 0));
+    width: 100vw; height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a  {
+    text-decoration: none;
+}
+.radius {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 3px solid black;
+    border-radius: 50%;
+    width: 300px; height: 300px;
+    color: black;
+    background: linear-gradient(rgba(0,0,0,.3), crimson, rgba(0,0,0,.3));
+    box-shadow: 1px 1px 5px black;
+    cursor: pointer;
+    position: absolute;
+    animation: 2s linear infinite;
+    animation-name: buttonSpand;
+}
+.radius a {
+    color: white;
+    transition: all ease-in .8s;
+    text-shadow: 1px 1px 4px crimson;
+}
+.radius a:hover {
+    color: black;
+}
+.radius a div {
+    width: 100%; height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.radius a div img {
+    width: 50px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 50%;
+    background-color: black;
+}
+.radius:hover {
+    background: linear-gradient(crimson, rgba(0,0,0,.3), crimson);
+    color: white;
+    text-shadow: 1px 1px 4px black;
+}
+.main .dragon {
+    width: 800px;
+    margin-right: 150px;
+    animation: 3s linear infinite;
+    animation-name: slidein;
+}
+
+.firePage {
+    width: 100vw; height: 100vh;  
+    overflow-y: hidden;  
+}
+.divAbsolute {
+    width: 100%; height: 100%;
+    background: linear-gradient(rgb(188, 0, 0), rgba(188, 0, 0,0));
+    position: absolute;
+}
+.firePage img {
+    width: 100%; height: 100%;
+}
+
+@keyframes slidein {
+    0% {
+        margin-top: 0px;
+    }
+
+    25% {
+        margin-top: -10px;
+    }
+  
+    50% {
+        margin-top: -30px;
+    }
+
+    75% {
+        margin-top: -10px;
+    }
+
+    100% {
+        margin-top: 0px;
+    }
+}
+
+@keyframes buttonSpand {
+    0% {
+        width: 300px; height: 300px;
+    }
+  
+    50% {
+        width: 310px; height: 310px;
+    }
+
+    100% {
+        width: 300px; height: 300px;
+    }
+}
+
+.line {
+    height: 1px; width: 100vw;
+    background: linear-gradient(90deg, black,red,black);
+}
