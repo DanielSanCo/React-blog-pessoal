@@ -1,15 +1,14 @@
 import React from 'react';
-import Footer from "../footer/Footer";
-import Header from "../header/Header";
-import Navbar from "../navbar/Navbar";
-import {Typography, Grid, Button} from '@material-ui/core';
-import {Box} from '@mui/material';
+import Footer from "../../components/footer/Footer";
+import Header from "../../components/header/Header";
+import Navbar from "../../components/navbar/Navbar";
+import { Typography, Grid, Button } from '@material-ui/core';
+import { Box } from '@mui/material';
 import './Home.css';
 
 const Home = () => {
     return (
         <>
-        <Navbar />
             <Grid container direction="row" justifyContent="center" alignItems="center" className="caixa">
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={20} >
@@ -28,8 +27,6 @@ const Home = () => {
                 <Grid xs={12} className="postagens">
                 </Grid>
             </Grid>
-
-            <Footer />
         </>
     );
 }
