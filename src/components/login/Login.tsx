@@ -1,7 +1,8 @@
-import React from 'react'
-import { Grid, Typography, TextField, Button } from '@material-ui/core'
-import { Box } from '@mui/material'
+import React from 'react';
+import { Grid, Typography, TextField, Button } from '@material-ui/core';
+import { Box } from '@mui/material';
 import { Link } from 'react-router-dom';
+import './Login.css';
 
 const Login = () => {
     return (
@@ -28,10 +29,7 @@ const Login = () => {
                     </Box>
                 </Box>
             </Grid>
-            <Grid xs={6} style={{
-                backgroundImage: 'url(https://images-ext-1.discordapp.net/external/Crc25VKJ9F7aNLZQciU4iTtrCw6jy79uME_g7AYY_Qg/https/i.imgur.com/d5bMdDJ.jpg?width=462&height=664")',
-                backgroundRepeat: 'no-repeat', width: '100vw', backgroundSize: 'cover', backgroundPosition: 'center'
-            }}>
+            <Grid xs={6} className="imagem">
 
             </Grid>
         </Grid>

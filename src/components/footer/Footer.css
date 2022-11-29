@@ -1,10 +1,18 @@
+.box1 {
+    background-color: #3F51B5;
+    height: 120px;
+}
 
+.box2 {
+    background-color: #303F9F;
+    height: 60px;
+}
 
-footer {
-    width: 100vw; height: 180px;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.redes {
+    font-size: 60px;
+    color: white;
+}
+
+.textos {
+    color: white;
 }
